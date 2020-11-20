@@ -1,4 +1,5 @@
 #this program makes audiobook from any .pdf file.
+
 import pyttsx3
 import PyPDF2
 book = open("class-11-Accountancy-part-1.pdf", 'rb')
@@ -11,4 +12,3 @@ for i in range(0,pages):
     text = page.extractText()
     speaker.say(text)
     speaker.runAndWait()
-    
